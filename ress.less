@@ -1,0 +1,20 @@
+.position(@x: ~'', @y: ~'') {
+  left : @x;
+  top : @y;
+}
+.position(@mode, @x, @y){
+  @media screen and (max-width: @@mode){
+    left : @x;
+    left : @y;
+  }
+}
+.size(@w: ~'', @h: ~'') {
+  width : @w;
+  height : @h;
+}
+.size(@mode, @w, @h){
+  @media screen and (max-width: @@mode){
+    width : @w;
+    height : @h;
+  }
+}
